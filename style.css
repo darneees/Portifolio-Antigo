@@ -5,7 +5,7 @@
   font-family: 'DM Sans', sans-serif;
 }
 /* HEADER */
-.container {
+#container {
   background: linear-gradient(90deg, #000000 , #1e1e1e);
   display: flex;
   justify-content: space-around;
@@ -76,7 +76,6 @@
   border-radius: 3px;
 }
 .cntTxt .down:hover {
-  color: #828282;
   background: #F9F9F9;
 }
 .cntTxt img {
@@ -193,15 +192,15 @@
   border-radius: 5px;
 }
 .cnt-Box a, .cnt-Box2 a, .cnt-Box3 a, .cnt-Box4 a, .cnt-Box5 a, .cnt-Box6 a {
-  padding: 5px 25px 5px 25px;
+  padding: 5px 25px 10px 25px;
   text-decoration: none;
-  color: #dddddd;
+  color: #1E1E1E;
   background: #828282;
   margin-top: 15px;
   border-radius: 3px;
 }
 .cnt-Box a:hover, .cnt-Box2 a:hover, .cnt-Box3 a:hover, .cnt-Box4 a:hover, .cnt-Box5 a:hover, .cnt-Box6 a:hover {
-  color: #171717;
+  background: #F9F9F9;
 }
 .cnt-3 h3 {
   text-transform: uppercase;
@@ -219,7 +218,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 500px;
+  height: 400px;
 }
 .cnt-4 h2 {
   color: #F9F9F9;
@@ -249,10 +248,68 @@
   justify-content: space-around;
   flex-direction: column;
   border-bottom: 4px solid #4f8baa;
+  border-radius: 5px;
 }
 .srv1 h3, .srv2 h3 {
   color: #828282;
 }
 .srv1 img, .srv2 img {
   height: 39px;
+}
+/* MAIN - SECTIN 05 */
+#content5 {
+  background: linear-gradient(90deg, #000000 , #1e1e1e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+}
+.cnt-05 h2 {
+  color: #F9F9F9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+.cnt-05 .skills {
+  height: 26px;
+  padding-right: 6px;
+}
+.img-05 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.iBox1 , .iBox2 , .iBox3 {
+  background: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 5px;
+}
+/*  FOOTER  */
+#foot {
+  background: #1E1E1E;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 65px;
+}
+.copy p {
+  color: #F9F9F9;
+  letter-spacing: 1px;
+}
+.copy em {
+  color: #4f8baa;
+}
+.btn-ft a{
+  background: #4f8baa;
+  border-radius: 7px;
+  padding: 7px;
+  text-decoration: none;
+  color: #F9F9F9;
 }
