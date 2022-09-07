@@ -313,3 +313,114 @@
   text-decoration: none;
   color: #F9F9F9;
 }
+/*  REPONSIVE  */
+@media ( max-width:1200px ){
+
+  header , main , footer {
+    position: relative;
+    width: calc(100%);
+  }
+}
+@media (max-width: 992px) {
+  #container {
+    height: 160px;
+    position: relative;
+		flex-direction: column;
+		width: 100%;
+  }
+  #content {
+    flex-direction: column;
+		height: 210px;
+    justify-content: center;
+    align-items: center;
+  }
+  #content .down {
+    margin-left: 20px;
+  }
+  .cntTxt h1 {
+    margin-bottom: -5px;
+  }
+  .cntImg img {
+    display: none;
+  }
+  #content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+  }
+  .cnt2 {
+    width: 315px;
+  }
+  .cnt-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cnt-2 .name , .email , .inst, .contac {
+    margin: 13px;
+    height: 135px;
+    width: 271px;
+  }
+  #content3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 2000px;
+  }
+  .cnt-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cnt-Box , .cnt-Box2 , .cnt-Box3 , .cnt-Box4 , .cnt-Box5 , .cnt-Box6 {
+    height: 275px;
+  }
+  #content4 {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .cnt-Srv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .cnt-Srv .srv1 , .srv2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 272px;
+  }
+  #content5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+  }
+  .img-05 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .iBox1 , .iBox2 , .iBox3 {
+    width: 274px;
+  }
+  #foot {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
