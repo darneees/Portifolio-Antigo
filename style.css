@@ -68,22 +68,45 @@
   color: #828282;
   padding-bottom: 18px;
 }
-.cntTxt .down {
-  padding: 8px 15px 8px 15px;
-  background: #4f8baa;
-  color: #171717;
-  text-decoration: none;
-  border-radius: 3px;
-}
-.cntTxt .down:hover {
-  background: #F9F9F9;
-}
-.cntTxt img {
-  padding-right: 7px;
-  height: 17px;
-}
 .cntImg img {
   max-width: 400px;
+}
+/* MAIN - BUTTON */
+.bttn {
+  border-radius: 4px;
+  background-color: #4f8baa;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.bttn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.bttn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.bttn:hover span {
+  padding-right: 25px;
+}
+.bttn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.bttn span a {
+  text-decoration: none;
+  color: #171717;
 }
 /* MAIN - SECTIN 02 */
 #content2 {
@@ -151,7 +174,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 600px;
 }
 #content3 h2 {
   letter-spacing: 2px;
@@ -175,21 +198,14 @@
   color: #828282;
   background: #212121;
   width: 270px;
-  height: 300px;
-  margin: 10px;
+  height: 170px;
+  margin: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 5px;
   border-bottom: 4px solid #4f8baa;
-}
-.cnt-Box div, .cnt-Box2 div, .cnt-Box3 div, .cnt-Box4 div, .cnt-Box5 div, .cnt-Box6 div {
-  background: #171717;
-  width: 225px;
-  height: 130px;
-  margin-bottom: 9px;
-  border-radius: 5px;
 }
 .cnt-Box a, .cnt-Box2 a, .cnt-Box3 a, .cnt-Box4 a, .cnt-Box5 a, .cnt-Box6 a {
   padding: 5px 25px 10px 25px;
@@ -206,6 +222,7 @@
   text-transform: uppercase;
   padding-bottom: 3px;
   letter-spacing: 2px;
+  font-size: 25px;
   color: #F9F9F9;
 }
 .cnt-3 h3::first-letter {
@@ -322,6 +339,9 @@
   }
 }
 @media (max-width: 992px) {
+  body {
+    width: 100%;
+  }
   header , main , footer {
     position: relative;
     width: calc(100%);
@@ -329,12 +349,12 @@
   #container {
     height: 190px;
     position: relative;
-    flex-direction: column;
-    width: 100%;
+		flex-direction: column;
+		width: 100%;
   }
   #content {
     flex-direction: column;
-    height: 550px;
+		height: 550px;
     justify-content: center;
     align-items: center;
   }
@@ -373,7 +393,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 2300px;
+    height: 2000px;
   }
   .cnt-3 {
     display: flex;
@@ -381,7 +401,7 @@
     flex-direction: column;
   }
   .cnt-Box , .cnt-Box2 , .cnt-Box3 , .cnt-Box4 , .cnt-Box5 , .cnt-Box6 {
-    height: 275px;
+    height: 180px;
   }
   #content4 {
     height: 450px;
