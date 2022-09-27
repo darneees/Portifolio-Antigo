@@ -323,13 +323,6 @@
 .copy em {
   color: #4f8baa;
 }
-.btn-ft a{
-  background: #4f8baa;
-  border-radius: 7px;
-  padding: 7px;
-  text-decoration: none;
-  color: #F9F9F9;
-}
 /*  REPONSIVE  */
 @media ( max-width:1200px ){
 
